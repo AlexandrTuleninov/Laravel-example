@@ -7,5 +7,7 @@ use App\Owner;
 
 class OwnerController extends Controller
 {
-  
+  public function inform(){
+    $inform = Owner::find(1)->inform;
+  }
 }

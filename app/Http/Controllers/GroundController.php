@@ -33,4 +33,11 @@ class GroundController extends Controller
         dump($ground->inform);
         }
     }
+
+    public function photos(){
+        $ground=Ground::find(1);
+        foreach($ground->photos as $photo){
+            dump($photo);
+        }
+    }
 }

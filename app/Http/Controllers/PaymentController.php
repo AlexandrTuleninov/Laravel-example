@@ -12,4 +12,9 @@ class PaymentController extends Controller
         dump($payment);
         dump($payment->ground);
     }
+
+    public function ground(){
+       $payment = Payment::find(1);
+       dump($payment->ground);
+    }
 }
